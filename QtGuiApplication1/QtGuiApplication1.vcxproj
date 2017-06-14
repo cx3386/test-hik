@@ -85,6 +85,7 @@
     <ClCompile Include="GeneratedFiles\Release\moc_QtGuiApplication1.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="hikvision.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="QtGuiApplication1.cpp" />
   </ItemGroup>
@@ -114,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_QtGuiApplication1.h" />
+    <ClInclude Include="hikvision.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="QtGuiApplication1.qrc">
