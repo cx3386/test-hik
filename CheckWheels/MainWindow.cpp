@@ -1,7 +1,17 @@
 #include "MainWindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
-	: QMainWindow(parent)
+    : QMainWindow(parent)
 {
-	ui.setupUi(this);
+    ui.setupUi(this);
+}
+
+void MainWindow::on_action_Start_triggered()
+{
+
+}
+
+void MainWindow::RealPlay()
+{
+
 }
