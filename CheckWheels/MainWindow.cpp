@@ -8,10 +8,11 @@ MainWindow::MainWindow(QWidget *parent)
 
 void MainWindow::on_action_Start_triggered()
 {
-
+	hikRealPlay(getRealPlayHandle());
+	qDebug() << "realplay finished";
 }
 
-void MainWindow::RealPlay()
+HWND MainWindow::getRealPlayHandle()
 {
-
+	return (HWND)ui.realPlayViewer->winId();
 }

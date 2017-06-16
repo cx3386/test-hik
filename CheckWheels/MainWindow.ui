@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>400</height>
+    <width>1086</width>
+    <height>724</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,31 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
-     <widget class="CQtOpenCVViewerGl" name="RealPlayViewer"/>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="checkTab">
+       <attribute name="title">
+        <string>Check</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="CQtOpenCVViewerGl" name="checkViewer"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="realPlayTab">
+       <attribute name="title">
+        <string>Real Play</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QOpenGLWidget" name="realPlayViewer"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
     </item>
    </layout>
   </widget>
@@ -25,8 +49,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>600</width>
-     <height>22</height>
+     <width>1086</width>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_Tools">

@@ -1,3 +1,5 @@
+
+#include "hikvision.h"
 #include <cstdlib>
 #include <cstring>
 #include <iostream>
@@ -6,6 +8,8 @@
 #include "plaympeg4.h"
 #include <opencv2\opencv.hpp>
 #include <time.h>
+#include <QtDebug>
+#include <QWidget>
 
 using namespace std;
 using namespace cv;
@@ -81,7 +85,7 @@ void CALLBACK fRealDataCallBack(LONG lRealHandle, DWORD dwDataType, BYTE *pBuffe
 		{
 			if (!PlayM4_InputData(nPort, pBuffer, dwBufSize))
 			{
-				cout << "error" << PlayM4_GetLastError(nPort) << endl;
+				qDebug() << "error" << PlayM4_GetLastError(nPort) << endl;
 				break;
 			}
 		}
@@ -101,20 +105,20 @@ void CALLBACK fRealDataCallBack(LONG lRealHandle, DWORD dwDataType, BYTE *pBuffe
 
 void CALLBACK g_ExceptionCallBack(DWORD dwType, LONG lUserID, LONG lHandle, void *pUser)
 {
+	//(HikVision*)pUser->
 	char tempbuf[256] = { 0 };
 	switch (dwType)
 	{
 	case EXCEPTION_RECONNECT:    //预览时重连
-		printf("----------reconnect--------%d\n", time(NULL));
+		qDebug("----------reconnect--------%d\n", time(NULL));
 		break;
 	default:
 		break;
 	}
 }
 
-void main()
+void HikVision::hikRealPlay(HWND h)
 {
-
 	//---------------------------------------
 	// 初始化
 	NET_DVR_Init();
@@ -127,10 +131,10 @@ void main()
 	// 注册设备
 	LONG lUserID;
 	NET_DVR_DEVICEINFO_V30 struDeviceInfo;
-	lUserID = NET_DVR_Login_V30("192.168.0.75", 8000, "admin", "qazwsx8023", &struDeviceInfo);
+	lUserID = NET_DVR_Login_V30("192.168.2.84", 8000, "admin", "www.cx3386.com", &struDeviceInfo);
 	if (lUserID < 0)
 	{
-		printf("Login error, %d\n", NET_DVR_GetLastError());
+		qDebug("Login error, %d\n", NET_DVR_GetLastError());
 		NET_DVR_Cleanup();
 		return;
 	}
@@ -142,13 +146,14 @@ void main()
 	//---------------------------------------
 	//启动预览并设置回调数据流
 	LONG lRealPlayHandle;
-	cvNamedWindow("Mywindow", 0);
-	cvNamedWindow("IPCamera", 0);
-
-	HWND  h = (HWND)cvGetWindowHandle("Mywindow");
+	//cvNamedWindow("Mywindow", 0);
+	//cvNamedWindow("IPCamera", 0);
+	
+	//HWND  h = (HWND)cvGetWindowHandle("Mywindow");
+	
 	if (h == 0)
 	{
-		cout << "窗口创建失败" << endl;
+		qDebug() << "窗口创建失败" << endl;
 	}
 
 
@@ -162,8 +167,8 @@ void main()
 
 	if (lRealPlayHandle < 0)
 	{
-		printf("NET_DVR_RealPlay_V40 error\n");
-		printf("%d\n", NET_DVR_GetLastError());
+		qDebug("NET_DVR_RealPlay_V40 error\n");
+		qDebug("%d\n", NET_DVR_GetLastError());
 		NET_DVR_Logout(lUserID);
 		NET_DVR_Cleanup();
 		return;
