@@ -11,11 +11,16 @@ class MainWindow : public QMainWindow, public HikVision
 
 public:
     MainWindow(QWidget *parent = Q_NULLPTR);
-	HWND getRealPlayHandle();//È¡µÃ´°¿ÚÄÚÒ»¸öGLWIdgetµÄ¾ä±ú
-
+    HWND getRealPlayHandle();//È¡ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½GLWIdgetï¿½Ä¾ï¿½ï¿½ï¿½
+	BOOL isPlayFlag;
+	//BOOL isConnectFlag;
 private slots:
     void on_action_Start_triggered();
 
+    void on_action_Stop_triggered();
+
 private:
-	Ui::MainWindowClass ui;
+    Ui::MainWindowClass ui;
+    cv::Mat image;
+	
 };

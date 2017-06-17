@@ -4,9 +4,9 @@
 #include <cstring>
 #include <iostream>
 #include "Windows.h"
-#include "HCNetSDK.h"
+
 #include "plaympeg4.h"
-#include <opencv2\opencv.hpp>
+
 #include <time.h>
 #include <QtDebug>
 #include <QWidget>
@@ -18,6 +18,7 @@ LONG nPort = -1;
 
 volatile int gbHandling = 3;
 
+Mat* pRawImage;
 //解码回调 视频为YUV数据(YV12)，音频为PCM数据
 void CALLBACK DecCBFun(long nPort, char * pBuf, long nSize, FRAME_INFO * pFrameInfo, long nReserved1, long nReserved2)
 {
@@ -30,13 +31,13 @@ void CALLBACK DecCBFun(long nPort, char * pBuf, long nSize, FRAME_INFO * pFrameI
 	long lFrameType = pFrameInfo->nType;
 	if (lFrameType == T_YV12)
 	{
-
 		Mat pImg(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC3);
+		pRawImage = &pImg;
 		Mat src(pFrameInfo->nHeight + pFrameInfo->nHeight / 2, pFrameInfo->nWidth, CV_8UC1, pBuf);
 		cvtColor(src, pImg, CV_YUV2BGR_YV12);
 		//  Sleep(-1);
-		//imshow("IPCamera", pImg);
-		waitKey(1);
+		imshow("IPCamera", pImg);
+		waitKey(1);//wait是阻塞式
 
 	}
 
@@ -100,12 +101,12 @@ void CALLBACK fRealDataCallBack(LONG lRealHandle, DWORD dwDataType, BYTE *pBuffe
 		}
 		break;
 	}
+	Sleep(1);
 }
 
 
 void CALLBACK g_ExceptionCallBack(DWORD dwType, LONG lUserID, LONG lHandle, void *pUser)
 {
-	//(HikVision*)pUser->
 	char tempbuf[256] = { 0 };
 	switch (dwType)
 	{
@@ -117,7 +118,7 @@ void CALLBACK g_ExceptionCallBack(DWORD dwType, LONG lUserID, LONG lHandle, void
 	}
 }
 
-void HikVision::hikRealPlay(HWND h)
+BOOL HikVision::hikRealPlay(HWND h)
 {
 	//---------------------------------------
 	// 初始化
@@ -129,14 +130,14 @@ void HikVision::hikRealPlay(HWND h)
 
 	//---------------------------------------
 	// 注册设备
-	LONG lUserID;
-	NET_DVR_DEVICEINFO_V30 struDeviceInfo;
+	//LONG lUserID;
+	//NET_DVR_DEVICEINFO_V30 struDeviceInfo;
 	lUserID = NET_DVR_Login_V30("192.168.2.84", 8000, "admin", "www.cx3386.com", &struDeviceInfo);
 	if (lUserID < 0)
 	{
 		qDebug("Login error, %d\n", NET_DVR_GetLastError());
 		NET_DVR_Cleanup();
-		return;
+		return FALSE;
 	}
 
 	//---------------------------------------
@@ -145,7 +146,7 @@ void HikVision::hikRealPlay(HWND h)
 
 	//---------------------------------------
 	//启动预览并设置回调数据流
-	LONG lRealPlayHandle;
+	//LONG lRealPlayHandle;
 	//cvNamedWindow("Mywindow", 0);
 	//cvNamedWindow("IPCamera", 0);
 	
@@ -153,7 +154,7 @@ void HikVision::hikRealPlay(HWND h)
 	
 	if (h == 0)
 	{
-		qDebug() << "窗口创建失败" << endl;
+		qDebug() << "realplay init window failed!" << endl;
 	}
 
 
@@ -162,6 +163,7 @@ void HikVision::hikRealPlay(HWND h)
 	struPlayInfo.lChannel = 1;           //预览通道号
 	struPlayInfo.dwStreamType = 0;       //0-主码流，1-子码流，2-码流3，3-码流4，以此类推
 	struPlayInfo.dwLinkMode = 0;         //0- TCP方式，1- UDP方式，2- 多播方式，3- RTP方式，4-RTP/RTSP，5-RSTP/HTTP
+	struPlayInfo.bBlocked = 1;			//0-非阻塞取流, 1-阻塞取流, 如果阻塞SDK内部connect失败将会有5s的超时才能够返回,不适合于轮询取流操作.
 
 	lRealPlayHandle = NET_DVR_RealPlay_V40(lUserID, &struPlayInfo, fRealDataCallBack, NULL);
 
@@ -171,18 +173,31 @@ void HikVision::hikRealPlay(HWND h)
 		qDebug("%d\n", NET_DVR_GetLastError());
 		NET_DVR_Logout(lUserID);
 		NET_DVR_Cleanup();
-		return;
+		return FALSE;
 	}
 	waitKey();
 
-	Sleep(-1);
+	//Sleep(-1);
+
+
+	return TRUE;
+}
+
+BOOL HikVision::hikStopRealPlay()
+{	
 	//---------------------------------------
 	//关闭预览
-	NET_DVR_StopRealPlay(lRealPlayHandle);
+	if (!NET_DVR_StopRealPlay(lRealPlayHandle))
+	{
+		return FALSE;
+	}
 	//注销用户
-	NET_DVR_Logout(lUserID);
-	//释放SDK资源
-	NET_DVR_Cleanup();
 
-	return;
+	if (!NET_DVR_Logout(lUserID))
+	{
+		return FALSE;
+	}
+	//释放SDK资源
+	
+	return (NET_DVR_Cleanup());
 }

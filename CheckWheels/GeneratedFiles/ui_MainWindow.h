@@ -18,7 +18,6 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QOpenGLWidget>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QToolBar>
@@ -31,6 +30,7 @@ class Ui_MainWindowClass
 {
 public:
     QAction *action_Start;
+    QAction *action_Stop;
     QWidget *centralWidget;
     QGridLayout *gridLayout;
     QTabWidget *tabWidget;
@@ -39,7 +39,6 @@ public:
     CQtOpenCVViewerGl *checkViewer;
     QWidget *realPlayTab;
     QGridLayout *gridLayout_3;
-    QOpenGLWidget *realPlayViewer;
     QMenuBar *menuBar;
     QMenu *menu_Tools;
     QMenu *menuCamera;
@@ -53,6 +52,9 @@ public:
         MainWindowClass->resize(1086, 724);
         action_Start = new QAction(MainWindowClass);
         action_Start->setObjectName(QStringLiteral("action_Start"));
+        action_Stop = new QAction(MainWindowClass);
+        action_Stop->setObjectName(QStringLiteral("action_Stop"));
+        action_Stop->setEnabled(false);
         centralWidget = new QWidget(MainWindowClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         gridLayout = new QGridLayout(centralWidget);
@@ -79,11 +81,6 @@ public:
         gridLayout_3->setSpacing(6);
         gridLayout_3->setContentsMargins(11, 11, 11, 11);
         gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
-        realPlayViewer = new QOpenGLWidget(realPlayTab);
-        realPlayViewer->setObjectName(QStringLiteral("realPlayViewer"));
-
-        gridLayout_3->addWidget(realPlayViewer, 0, 0, 1, 1);
-
         tabWidget->addTab(realPlayTab, QString());
 
         gridLayout->addWidget(tabWidget, 0, 0, 1, 1);
@@ -107,6 +104,7 @@ public:
         menuBar->addAction(menu_Tools->menuAction());
         menu_Tools->addAction(menuCamera->menuAction());
         menuCamera->addAction(action_Start);
+        menuCamera->addAction(action_Stop);
 
         retranslateUi(MainWindowClass);
 
@@ -120,6 +118,7 @@ public:
     {
         MainWindowClass->setWindowTitle(QApplication::translate("MainWindowClass", "MainWindow", Q_NULLPTR));
         action_Start->setText(QApplication::translate("MainWindowClass", "&Start", Q_NULLPTR));
+        action_Stop->setText(QApplication::translate("MainWindowClass", "&Stop", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(checkTab), QApplication::translate("MainWindowClass", "Check", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(realPlayTab), QApplication::translate("MainWindowClass", "Real Play", Q_NULLPTR));
         menu_Tools->setTitle(QApplication::translate("MainWindowClass", "&Tools", Q_NULLPTR));
