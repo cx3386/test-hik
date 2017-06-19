@@ -7,10 +7,14 @@
 message("You are running qmake on a generated .pro file. This may not work!")
 
 
-HEADERS += ./MainWindow.h \
-    ./cqtopencvviewergl.h
-SOURCES += ./main.cpp \
+HEADERS += ./hikvision.h \
+    ./MainWindow.h \
+    ./cqtopencvviewergl.h \
+    ./alarmlight.h
+SOURCES += ./cqtopencvviewergl.cpp \
+    ./hikvision.cpp \
+    ./main.cpp \
     ./MainWindow.cpp \
-    ./cqtopencvviewergl.cpp
+    ./alarmlight.cpp
 FORMS += ./MainWindow.ui
 RESOURCES += MainWindow.qrc

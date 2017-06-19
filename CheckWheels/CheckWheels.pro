@@ -5,7 +5,7 @@
 TEMPLATE = app
 TARGET = CheckWheels
 DESTDIR = ../x64/Debug
-QT += core opengl widgets gui
+QT += core opengl widgets gui serialport
 CONFIG += debug
 DEFINES += WIN64 QT_DLL QT_OPENGL_LIB QT_WIDGETS_LIB
 INCLUDEPATH += ./GeneratedFiles \
