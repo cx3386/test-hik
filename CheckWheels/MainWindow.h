@@ -1,11 +1,12 @@
 #pragma once
 
-#include <QtWidgets/QMainWindow>
+#include <QMainWindow>
 #include <QtDebug>
-#include <QtSerialPort/QtSerialPort>
+#include <QtSerialPort>
+#include <QMessageBox>
 #include "ui_MainWindow.h"
 #include "hikvision.h"
-#include "alarmlight.h"
+#include "alarm.h"
 
 class MainWindow : public QMainWindow
 {
@@ -13,6 +14,7 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = Q_NULLPTR);
+	~MainWindow();
     HWND realPlayHandle;//ȡ�ô�����һ��GLWIdget�ľ���
     BOOL isPlayFlag;
 
@@ -20,13 +22,16 @@ public:
 private slots:
     void on_action_Start_triggered();
 
-    void on_action_Stop_triggered();
+
+
+	void on_action_Stop_triggered();
 
 private:
     Ui::MainWindowClass ui;
-    cv::Mat image;
+    //cv::Mat image;
+	QSerialPort alarmSerial;
+	QByteArray alarmData;
     HikVision hikvision;
-
-    AlarmLight alarm;
-
+	void Alarm(const char* lightcolor);
+	//void loopShow();
 };
