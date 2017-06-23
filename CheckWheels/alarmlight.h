@@ -37,7 +37,10 @@ private:
     QMutex mutex;
     QWaitCondition cond;
     bool quit;
+	QSerialPort serial;
 
+	/*
+	//string to hex
 	static char ConvertHexChar(char ch)
 	{
 		if ((ch >= '0') && (ch <= '9'))
@@ -80,6 +83,8 @@ private:
 		senddata.resize(hexdatalen);
 		return senddata;
 	}
+	*/
+
 };
 
 #endif // ALARMLIGHT_H

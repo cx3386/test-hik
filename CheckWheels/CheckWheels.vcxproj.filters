@@ -67,15 +67,6 @@
     <ClCompile Include="hikvision.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_alarmlight.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_alarmlight.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="alarmlight.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="MainWindow.h">
@@ -90,15 +81,15 @@
     <CustomBuild Include="cqtopencvviewergl.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="alarmlight.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_MainWindow.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="hikvision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="alarm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
