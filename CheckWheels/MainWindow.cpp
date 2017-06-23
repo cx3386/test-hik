@@ -55,16 +55,16 @@ void MainWindow::on_action_Start_triggered()
     ui.action_Start->setEnabled(!isPlayFlag);
     ui.action_Stop->setEnabled(isPlayFlag);
 	
-	while(1)
-	{
-		QEventLoop eventloop;
-		QTimer::singleShot(400, &eventloop, SLOT(quit())); //wait 0.4s
-		eventloop.exec();
-		mutex.lock();
-		ui.checkViewer->showImage(pRawImage);
-		imshow("fuck the world!", pRawImage);
-		mutex.unlock();
-	}
+	//while(1)
+	//{
+	//	QEventLoop eventloop;
+	//	QTimer::singleShot(400, &eventloop, SLOT(quit())); //wait 0.4s
+	//	eventloop.exec();
+	//	mutex.lock();
+	//	ui.checkViewer->showImage(pRawImage);
+	//	imshow("fuck the world!", pRawImage);
+	//	mutex.unlock();
+	//}
 }
 
 void MainWindow::on_action_Stop_triggered()
