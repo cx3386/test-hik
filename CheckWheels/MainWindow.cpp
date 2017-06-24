@@ -80,31 +80,31 @@ void MainWindow::myMessageOutput(QtMsgType type, const QMessageLogContext &conte
 {
 	static QMutex mutex;
 	mutex.lock();
-	QString debugMessage;
+	QString txt;
 	//output the critical message, i.e., when find a wheel stucked! 
 	//QString criticalMessage;
 	switch (type) {
 	case QtDebugMsg:
-		debugMessage = QString("Debug: %1").arg(msg);
+		txt = QString("Debug:");
 		break;
 	case QtInfoMsg:
-		debugMessage = QString("Info: %1").arg(msg);
+		txt = QString("Info:");
 		break;
 	case QtWarningMsg:
-		debugMessage = QString("Warning: %1").arg(msg);		
+		txt = QString("Warning:");		
 		break;
 	case QtCriticalMsg:
-		debugMessage = QString("Critical: %1").arg(msg);		
+		txt = QString("Critical:");		
 		break;
 	case QtFatalMsg:
-		debugMessage = QString("Fatal: %1").arg(msg);		
+		txt = QString("Fatal:");		
 		abort();
 	}
 
 	//QString context_info = QString("File:(%1) Line:(%2)").arg(QString(context.file)).arg(context.line);
 	QString current_date_time = QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss");//ddd is weekday
 	QString current_date = QString("[%1]").arg(current_date_time);
-	QString message = QString("%1 %2").arg(current_date).arg(debugMessage);
+	QString message = QString("%1 %2 %3").arg(current_date).arg(txt).arg(msg);
 
 	ui.logBrowser->append(message);
 
