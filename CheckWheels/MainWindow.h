@@ -15,7 +15,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = Q_NULLPTR);
 	~MainWindow();
-    HWND realPlayHandle;//ȡ�ô�����һ��GLWIdget�ľ���
+    HWND realPlayHandle;//get opengl widget handle
     BOOL isPlayFlag;
 
     //BOOL isConnectFlag;
@@ -23,6 +23,8 @@ private slots:
     void on_action_Start_triggered();
 
 
+
+	void myMessageOutput(QtMsgType type, const QMessageLogContext & context, const QString & msg);
 
 	void on_action_Stop_triggered();
 

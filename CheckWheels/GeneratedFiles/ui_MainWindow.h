@@ -20,7 +20,9 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QToolBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 #include "cqtopencvviewergl.h"
 
@@ -32,13 +34,15 @@ public:
     QAction *action_Start;
     QAction *action_Stop;
     QWidget *centralWidget;
-    QGridLayout *gridLayout;
+    QGridLayout *gridLayout_3;
     QTabWidget *tabWidget;
     QWidget *checkTab;
-    QGridLayout *gridLayout_2;
+    QGridLayout *gridLayout;
+    QVBoxLayout *verticalLayout;
     CQtOpenCVViewerGl *checkViewer;
+    CQtOpenCVViewerGl *checkViewer_2;
+    QTextBrowser *logBrowser;
     QWidget *realPlayTab;
-    QGridLayout *gridLayout_3;
     QMenuBar *menuBar;
     QMenu *menu_Tools;
     QMenu *menuCamera;
@@ -49,7 +53,7 @@ public:
     {
         if (MainWindowClass->objectName().isEmpty())
             MainWindowClass->setObjectName(QStringLiteral("MainWindowClass"));
-        MainWindowClass->resize(1086, 724);
+        MainWindowClass->resize(435, 315);
         action_Start = new QAction(MainWindowClass);
         action_Start->setObjectName(QStringLiteral("action_Start"));
         action_Stop = new QAction(MainWindowClass);
@@ -57,38 +61,54 @@ public:
         action_Stop->setEnabled(false);
         centralWidget = new QWidget(MainWindowClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        gridLayout = new QGridLayout(centralWidget);
-        gridLayout->setSpacing(6);
-        gridLayout->setContentsMargins(11, 11, 11, 11);
-        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        gridLayout_3 = new QGridLayout(centralWidget);
+        gridLayout_3->setSpacing(6);
+        gridLayout_3->setContentsMargins(11, 11, 11, 11);
+        gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
         checkTab = new QWidget();
         checkTab->setObjectName(QStringLiteral("checkTab"));
-        gridLayout_2 = new QGridLayout(checkTab);
-        gridLayout_2->setSpacing(6);
-        gridLayout_2->setContentsMargins(11, 11, 11, 11);
-        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
+        gridLayout = new QGridLayout(checkTab);
+        gridLayout->setSpacing(6);
+        gridLayout->setContentsMargins(11, 11, 11, 11);
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setSpacing(6);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         checkViewer = new CQtOpenCVViewerGl(checkTab);
         checkViewer->setObjectName(QStringLiteral("checkViewer"));
+        checkViewer->setMinimumSize(QSize(192, 108));
+        checkViewer->setAutoFillBackground(true);
 
-        gridLayout_2->addWidget(checkViewer, 0, 0, 1, 1);
+        verticalLayout->addWidget(checkViewer);
+
+        checkViewer_2 = new CQtOpenCVViewerGl(checkTab);
+        checkViewer_2->setObjectName(QStringLiteral("checkViewer_2"));
+        checkViewer_2->setMinimumSize(QSize(192, 108));
+        checkViewer_2->setAutoFillBackground(true);
+
+        verticalLayout->addWidget(checkViewer_2);
+
+
+        gridLayout->addLayout(verticalLayout, 0, 0, 1, 1);
+
+        logBrowser = new QTextBrowser(checkTab);
+        logBrowser->setObjectName(QStringLiteral("logBrowser"));
+
+        gridLayout->addWidget(logBrowser, 0, 1, 1, 1);
 
         tabWidget->addTab(checkTab, QString());
         realPlayTab = new QWidget();
         realPlayTab->setObjectName(QStringLiteral("realPlayTab"));
-        gridLayout_3 = new QGridLayout(realPlayTab);
-        gridLayout_3->setSpacing(6);
-        gridLayout_3->setContentsMargins(11, 11, 11, 11);
-        gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
         tabWidget->addTab(realPlayTab, QString());
 
-        gridLayout->addWidget(tabWidget, 0, 0, 1, 1);
+        gridLayout_3->addWidget(tabWidget, 0, 0, 1, 1);
 
         MainWindowClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindowClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1086, 23));
+        menuBar->setGeometry(QRect(0, 0, 435, 17));
         menu_Tools = new QMenu(menuBar);
         menu_Tools->setObjectName(QStringLiteral("menu_Tools"));
         menuCamera = new QMenu(menu_Tools);
@@ -108,7 +128,7 @@ public:
 
         retranslateUi(MainWindowClass);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindowClass);

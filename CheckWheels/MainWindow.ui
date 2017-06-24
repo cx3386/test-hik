@@ -6,27 +6,57 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1086</width>
-    <height>724</height>
+    <width>435</width>
+    <height>315</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QGridLayout" name="gridLayout">
+   <layout class="QGridLayout" name="gridLayout_3">
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="checkTab">
        <attribute name="title">
         <string>Check</string>
        </attribute>
-       <layout class="QGridLayout" name="gridLayout_2">
+       <layout class="QGridLayout" name="gridLayout">
         <item row="0" column="0">
-         <widget class="CQtOpenCVViewerGl" name="checkViewer"/>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="CQtOpenCVViewerGl" name="checkViewer">
+            <property name="minimumSize">
+             <size>
+              <width>192</width>
+              <height>108</height>
+             </size>
+            </property>
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="CQtOpenCVViewerGl" name="checkViewer_2">
+            <property name="minimumSize">
+             <size>
+              <width>192</width>
+              <height>108</height>
+             </size>
+            </property>
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <widget class="QTextBrowser" name="logBrowser"/>
         </item>
        </layout>
       </widget>
@@ -34,7 +64,6 @@
        <attribute name="title">
         <string>Real Play</string>
        </attribute>
-       <layout class="QGridLayout" name="gridLayout_3"/>
       </widget>
      </widget>
     </item>
@@ -45,8 +74,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1086</width>
-     <height>23</height>
+     <width>435</width>
+     <height>17</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_Tools">

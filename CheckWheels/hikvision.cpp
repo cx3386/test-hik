@@ -8,8 +8,8 @@
 #include "plaympeg4.h"
 
 #include <time.h>
-#include <QtDebug>
-#include <QWidget>
+
+
 
 using namespace std;
 using namespace cv;
@@ -18,8 +18,7 @@ LONG nPort = -1;
 
 volatile int gbHandling = 0;//image interval
 
-Mat pRawImage;
-QMutex mutex;
+
 
 //解码回调 视频为YUV数据(YV12)，音频为PCM数据
 void CALLBACK DecCBFun(long nPort, char * pBuf, long nSize, FRAME_INFO * pFrameInfo, long nReserved1, long nReserved2)
@@ -34,14 +33,18 @@ void CALLBACK DecCBFun(long nPort, char * pBuf, long nSize, FRAME_INFO * pFrameI
 		Mat pImg(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC3);
 
 		Mat src(pFrameInfo->nHeight + pFrameInfo->nHeight / 2, pFrameInfo->nWidth, CV_8UC1, pBuf);
-		cvtColor(src, pImg, CV_YUV2BGR_YV12);
+		cvtColor(src, pImg, CV_YUV2GRAY_YV12);
 
 		mutex.lock();
+        //if (isProcessed == false)
+            //imageProcessed.wait(&mutex);
 		pRawImage = pImg;
+        //isProcessed == false;
+        imageNeedProcess.wakeOne();
 		mutex.unlock();
 		//  Sleep(-1);
 		//imshow("IPCamera", pImg);
-		//waitKey(1);//wait是阻塞式
+        //waitKey(1);//waitkey is used for event process in opencv gui.
 
 	}
 

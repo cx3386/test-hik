@@ -7,10 +7,13 @@ TARGET = CheckWheels
 DESTDIR = ../x64/Debug
 QT += core opengl widgets gui serialport
 CONFIG += debug
-DEFINES += WIN64 QT_DLL QT_OPENGL_LIB QT_WIDGETS_LIB
+DEFINES += WIN64 QT_DLL QT_OPENGL_LIB QT_WIDGETS_LIB QT_SERIALPORT_LIB
 INCLUDEPATH += ./GeneratedFiles \
     . \
     ./GeneratedFiles/Debug
+INCLUDEPATH += D:\opencv\build\include \
+               D:\opencv\build\include\opencv \
+               D:\opencv\build\include\opencv2
 LIBS += -lopengl32 \
     -lglu32 \
     -lopencv_world320d \
@@ -22,6 +25,7 @@ LIBS += -lopengl32 \
     -lHCGeneralCfgMgr \
     -lHCPreview
 DEPENDPATH += .
+
 MOC_DIR += ./GeneratedFiles/debug
 OBJECTS_DIR += debug
 UI_DIR += ./GeneratedFiles
