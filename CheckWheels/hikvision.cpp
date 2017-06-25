@@ -29,7 +29,7 @@ void CALLBACK DecCBFun(long nPort, char * pBuf, long nSize, FRAME_INFO * pFrameI
 	}
 	long lFrameType = pFrameInfo->nType;
 	if (lFrameType == T_YV12) {
-		
+
 		Mat pImg(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC3);
 
 		Mat src(pFrameInfo->nHeight + pFrameInfo->nHeight / 2, pFrameInfo->nWidth, CV_8UC1, pBuf);

@@ -7,12 +7,11 @@
 #include <QThread>
 #include <QWaitCondition>
 //#include <opencv.hpp>
-
-extern cv::Mat pRawImage;
-extern QMutex mutex;
-extern QWaitCondition imageAllProcessed;
-extern QWaitCondition imageNeedProcess;
-extern volatile bool isProcessed = false;
+//cv::Mat pRawImage;
+//QMutex mutex;
+////extern QWaitCondition imageAllProcessed;
+//QWaitCondition imageNeedProcess;
+//volatile bool isProcessed = false;
 
 using namespace cv;
 using namespace std;

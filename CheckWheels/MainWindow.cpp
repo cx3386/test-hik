@@ -1,5 +1,11 @@
 #include "MainWindow.h"
 
+cv::Mat pRawImage;
+QMutex mutex;
+//QWaitCondition imageAllProcessed;
+QWaitCondition imageNeedProcess;
+volatile bool isProcessed = false;
+
 MainWindow::MainWindow(QWidget* parent)
   : QMainWindow(parent)
 {
@@ -8,7 +14,11 @@ MainWindow::MainWindow(QWidget* parent)
   isPlayFlag = FALSE; // Init not play
   realPlayHandle = (HWND)ui.realPlayTab->winId();
 
+  imageProcess.start();
+  sendVideoFrame();
+
   /*alarm serial port init here*/
+  //should in the last init list, ensure init won't finish by "return"
   alarmSerial.setPortName("COM3");
   alarmSerial.setBaudRate(QSerialPort::Baud9600);
   if (!alarmSerial.open(QIODevice::ReadWrite)) {
@@ -38,6 +48,7 @@ MainWindow::MainWindow(QWidget* parent)
   }
   alarmData = QByteArray::fromHex("51");
   alarmSerial.write(alarmData);
+
 }
 
 MainWindow::~MainWindow()
@@ -58,22 +69,22 @@ MainWindow::on_action_Start_triggered()
   ui.action_Start->setEnabled(!isPlayFlag);
   ui.action_Stop->setEnabled(isPlayFlag);
 
-  while (1) {
-    QEventLoop eventloop;
-    QTimer::singleShot(400, &eventloop, SLOT(quit())); // wait 0.4s
-    eventloop.exec();
-    mutex.lock();
-    if (isProcessed == true)
-      imageNeedProcess.wait(&mutex);
-    ui.checkViewer->showImage(pRawImage);
-    cv::imshow("fuck the world!", pRawImage);
-    mutex.unlock();
-    // dosomething process the image
-    mutex.lock();
-    isProcessed == true;
-    imageAllProcessed.wakeAll();
-    mutex.unlock();
-  }
+  //while (1) {
+  //  QEventLoop eventloop;
+  //  QTimer::singleShot(400, &eventloop, SLOT(quit())); // wait 0.4s
+  //  eventloop.exec();
+  //  mutex.lock();
+  //  if (isProcessed == true)
+  //    imageNeedProcess.wait(&mutex);
+  //  ui.checkViewer->showImage(pRawImage);
+  //  cv::imshow("fuck the world!", pRawImage);
+  //  mutex.unlock();
+  //  // dosomething process the image
+  //  mutex.lock();
+  //  isProcessed == true;
+  //  imageAllProcessed.wakeAll();
+  //  mutex.unlock();
+  //}
 }
 
 void MainWindow::myMessageOutput(QtMsgType type, const QMessageLogContext &context, const QString &msg)

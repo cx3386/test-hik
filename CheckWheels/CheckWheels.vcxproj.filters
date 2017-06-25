@@ -55,15 +55,6 @@
     <ClCompile Include="GeneratedFiles\qrc_MainWindow.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_cqtopencvviewergl.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_cqtopencvviewergl.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="cqtopencvviewergl.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="hikvision.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -76,6 +67,9 @@
     <ClCompile Include="cimageprocess.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="testvideo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="MainWindow.h">
@@ -86,9 +80,6 @@
     </CustomBuild>
     <CustomBuild Include="MainWindow.qrc">
       <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="cqtopencvviewergl.h">
-      <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="cimageprocess.h">
       <Filter>Header Files</Filter>

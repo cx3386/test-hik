@@ -2,19 +2,20 @@
 #include <QMutex>
 #include <QtDebug>
 #include <Windows.h>
-#include <opencv.hpp>
+#include <opencv2/opencv.hpp>
 //#include <QWidget>
 #include <QWaitCondition>
 
-cv::Mat pRawImage;
-QMutex mutex;
+extern cv::Mat pRawImage;
+extern QMutex mutex;
+int sendVideoFrame();
 
 // In fact no need to block each other, only need block the image process
 // do not block the image capture
 // QWaitCondition imageAllProcessed;
 
-QWaitCondition imageNeedProcess;
-volatile bool isProcessed = false;
+extern QWaitCondition imageNeedProcess;
+extern volatile bool isProcessed;
 
 class HikVision
 {

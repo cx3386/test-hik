@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
@@ -22,9 +23,7 @@
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QToolBar>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
-#include "cqtopencvviewergl.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -38,10 +37,9 @@ public:
     QTabWidget *tabWidget;
     QWidget *checkTab;
     QGridLayout *gridLayout;
-    QVBoxLayout *verticalLayout;
-    CQtOpenCVViewerGl *checkViewer;
-    CQtOpenCVViewerGl *checkViewer_2;
+    QGraphicsView *graphicsView1;
     QTextBrowser *logBrowser;
+    QGraphicsView *graphicsView2;
     QWidget *realPlayTab;
     QMenuBar *menuBar;
     QMenu *menu_Tools;
@@ -53,7 +51,7 @@ public:
     {
         if (MainWindowClass->objectName().isEmpty())
             MainWindowClass->setObjectName(QStringLiteral("MainWindowClass"));
-        MainWindowClass->resize(435, 315);
+        MainWindowClass->resize(627, 486);
         action_Start = new QAction(MainWindowClass);
         action_Start->setObjectName(QStringLiteral("action_Start"));
         action_Stop = new QAction(MainWindowClass);
@@ -73,30 +71,27 @@ public:
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setSpacing(6);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        checkViewer = new CQtOpenCVViewerGl(checkTab);
-        checkViewer->setObjectName(QStringLiteral("checkViewer"));
-        checkViewer->setMinimumSize(QSize(192, 108));
-        checkViewer->setAutoFillBackground(true);
+        graphicsView1 = new QGraphicsView(checkTab);
+        graphicsView1->setObjectName(QStringLiteral("graphicsView1"));
+        graphicsView1->setMinimumSize(QSize(192, 108));
 
-        verticalLayout->addWidget(checkViewer);
-
-        checkViewer_2 = new CQtOpenCVViewerGl(checkTab);
-        checkViewer_2->setObjectName(QStringLiteral("checkViewer_2"));
-        checkViewer_2->setMinimumSize(QSize(192, 108));
-        checkViewer_2->setAutoFillBackground(true);
-
-        verticalLayout->addWidget(checkViewer_2);
-
-
-        gridLayout->addLayout(verticalLayout, 0, 0, 1, 1);
+        gridLayout->addWidget(graphicsView1, 0, 0, 1, 1);
 
         logBrowser = new QTextBrowser(checkTab);
         logBrowser->setObjectName(QStringLiteral("logBrowser"));
 
-        gridLayout->addWidget(logBrowser, 0, 1, 1, 1);
+        gridLayout->addWidget(logBrowser, 0, 1, 2, 1);
+
+        graphicsView2 = new QGraphicsView(checkTab);
+        graphicsView2->setObjectName(QStringLiteral("graphicsView2"));
+        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(graphicsView2->sizePolicy().hasHeightForWidth());
+        graphicsView2->setSizePolicy(sizePolicy);
+        graphicsView2->setMinimumSize(QSize(192, 108));
+
+        gridLayout->addWidget(graphicsView2, 1, 0, 1, 1);
 
         tabWidget->addTab(checkTab, QString());
         realPlayTab = new QWidget();
@@ -108,7 +103,7 @@ public:
         MainWindowClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindowClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 435, 17));
+        menuBar->setGeometry(QRect(0, 0, 627, 30));
         menu_Tools = new QMenu(menuBar);
         menu_Tools->setObjectName(QStringLiteral("menu_Tools"));
         menuCamera = new QMenu(menu_Tools);
