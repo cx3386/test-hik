@@ -1,7 +1,7 @@
 #pragma once
 /*The alarm light control*/
-#define ALARM_LIGHT_ON "00"		//0000
-#define ALARM_LIGHT_OFF "0F"		//1111
-#define ALARM_LIGHT_RED "0E"		//1110
-#define ALARM_LIGHT_YELLOW "0D"	//1101
-#define ALARM_LIGHT_GREEN "0B"	//1011
+#define ALARM_LIGHT_ON		"@00WR010000F032*\r"		//1111
+#define ALARM_LIGHT_OFF		"@00WR0100000044*\r"		//0000
+#define ALARM_LIGHT_RED		"@00WR0100001045*\r"	
+#define ALARM_LIGHT_GREEN	"@00WR0100002046*\r"
+#define ALARM_LIGHT_YELLOW	"@00WR0100004040*\r"	

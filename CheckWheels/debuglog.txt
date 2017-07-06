@@ -1,0 +1,1295 @@
+[2017-06-26 20:08:19] Debug: realplay start
+[2017-06-26 20:08:20] Debug: Radius: 268.781 
+
+[2017-06-26 20:08:21] Debug: Radius: 279.278 
+
+[2017-06-26 20:08:22] Debug: 7
+[2017-06-26 20:08:22] Debug: match 1.931 s 
+
+[2017-06-26 20:08:23] Debug: Cycle out:1
+
+[2017-06-26 20:08:23] Debug: Radius: 268.599 
+
+[2017-06-26 20:08:23] Debug: Cycle out:2
+
+[2017-06-26 20:08:23] Debug: Cycle out:3
+
+[2017-06-26 20:08:23] Debug: Radius: 286.616 
+
+[2017-06-26 20:08:24] Debug: Radius: 252.225 
+
+[2017-06-26 20:08:26] Debug: 7
+[2017-06-26 20:08:26] Debug: match 2.435 s 
+
+[2017-06-26 20:08:26] Debug: Cycle out:4
+
+[2017-06-26 20:08:26] Debug: Cycle out:5
+
+[2017-06-26 20:08:27] Debug: Cycle out:6
+
+[2017-06-26 20:08:27] Debug: Radius: 264.213 
+
+[2017-06-26 20:08:27] Debug: Cycle out:7
+
+[2017-06-26 20:08:28] Debug: Cycle out:8
+
+[2017-06-26 20:08:28] Debug: Cycle out:9
+
+[2017-06-26 20:08:29] Debug: Cycle out:10
+
+[2017-06-26 20:08:29] Debug: Cycle out:11
+
+[2017-06-26 20:08:29] Debug: Cycle out:12
+
+[2017-06-26 20:08:29] Debug: Radius: 270.078 
+
+[2017-06-26 20:08:30] Debug: Radius: 289.735 
+
+[2017-06-26 20:08:33] Debug: 7
+[2017-06-26 20:08:33] Debug: match 3.634 s 
+
+[2017-06-26 20:08:33] Debug: Cycle out:13
+
+[2017-06-26 20:08:34] Debug: Cycle out:14
+
+[2017-06-26 20:08:34] Debug: Cycle out:15
+
+[2017-06-26 20:08:34] Debug: Cycle out:16
+
+[2017-06-26 20:08:35] Debug: Cycle out:17
+
+[2017-06-26 20:08:35] Debug: Radius: 265.665 
+
+[2017-06-26 20:08:35] Debug: Radius: 241.559 
+
+[2017-06-26 20:08:37] Debug: 7
+[2017-06-26 20:08:37] Debug: match 1.719 s 
+
+[2017-06-26 20:08:37] Debug: Cycle out:18
+
+[2017-06-26 20:08:37] Debug: Radius: 270.243 
+
+[2017-06-26 20:08:37] Debug: Cycle out:19
+
+[2017-06-26 20:08:38] Debug: Radius: 273.316 
+
+[2017-06-26 20:08:38] Debug: Cycle out:20
+
+[2017-06-26 20:08:38] Debug: Radius: 246.031 
+
+[2017-06-26 20:08:39] Debug: Cycle out:21
+
+[2017-06-26 20:08:39] Debug: Radius: 259.522 
+
+[2017-06-26 20:08:39] Debug: Radius: 220.442 
+
+[2017-06-26 20:08:41] Debug: 7
+[2017-06-26 20:08:41] Debug: match 1.694 s 
+
+[2017-06-26 20:08:41] Debug: Cycle out:22
+
+[2017-06-26 20:08:41] Debug: Radius: 282.099 
+
+[2017-06-26 20:08:42] Debug: Cycle out:23
+
+[2017-06-26 20:08:42] Debug: Cycle out:24
+
+[2017-06-26 20:08:42] Debug: Radius: 270.047 
+
+[2017-06-26 20:08:43] Debug: Cycle out:25
+
+[2017-06-26 20:08:43] Debug: Cycle out:26
+
+[2017-06-26 20:08:43] Debug: Cycle out:27
+
+[2017-06-26 20:08:44] Debug: Cycle out:28
+
+[2017-06-26 20:08:44] Debug: Cycle out:29
+
+[2017-06-26 20:08:44] Debug: Radius: 256.681 
+
+[2017-06-26 20:08:44] Debug: Cycle out:30
+
+[2017-06-26 20:08:45] Debug: Cycle out:31
+
+[2017-06-26 20:08:45] Debug: Radius: 256.604 
+
+[2017-06-26 20:08:45] Debug: Cycle out:32
+
+[2017-06-26 20:08:46] Debug: Radius: 258.148 
+
+[2017-06-26 20:08:46] Debug: Radius: 250.535 
+
+[2017-06-26 20:08:48] Debug: 7
+[2017-06-26 20:08:48] Debug: match 2.17 s 
+
+[2017-06-26 20:08:48] Debug: f
+[2017-06-26 20:08:48] Debug: the angle is 1.172793??
+
+[2017-06-26 20:08:48] Debug: Radius: 270.168 
+
+[2017-06-26 20:08:49] Debug: Cycle out:33
+
+[2017-06-26 20:08:49] Debug: Radius: 244.661 
+
+[2017-06-26 20:08:49] Debug: Cycle out:34
+
+[2017-06-26 20:08:49] Debug: Radius: 274.806 
+
+[2017-06-26 20:08:50] Debug: Radius: 265.568 
+
+[2017-06-26 20:08:51] Debug: 7
+[2017-06-26 20:08:51] Debug: match 2.037 s 
+
+[2017-06-26 20:08:52] Debug: f
+[2017-06-26 20:08:52] Debug: the angle is 1.044896??
+
+[2017-06-26 20:08:52] Debug: Radius: 267.157 
+
+[2017-06-26 20:08:52] Debug: Radius: 267.157 
+
+[2017-06-26 20:08:53] Debug: 7
+[2017-06-26 20:08:53] Debug: the match point less than 10
+[2017-06-26 20:08:54] Debug: Cycle out:35
+
+[2017-06-26 20:08:54] Debug: Radius: 267.178 
+
+[2017-06-26 20:08:54] Debug: Cycle out:36
+
+[2017-06-26 20:08:55] Debug: Cycle out:37
+
+[2017-06-26 20:08:55] Debug: Radius: 276.144 
+
+[2017-06-26 20:08:55] Debug: Radius: 264.22 
+
+[2017-06-26 20:08:58] Debug: 7
+[2017-06-26 20:08:58] Debug: match 3.212 s 
+
+[2017-06-26 20:08:59] Debug: Cycle out:38
+
+[2017-06-26 20:08:59] Debug: Cycle out:39
+
+[2017-06-26 20:09:00] Debug: Radius: 259.574 
+
+[2017-06-26 20:09:00] Debug: Cycle out:40
+
+[2017-06-26 20:09:01] Debug: Cycle out:41
+
+[2017-06-26 20:09:01] Debug: Cycle out:42
+
+[2017-06-26 20:09:01] Debug: Radius: 267.113 
+
+[2017-06-26 20:09:02] Debug: Cycle out:43
+
+[2017-06-26 20:09:02] Debug: Cycle out:44
+
+[2017-06-26 20:09:02] Debug: Radius: 252.236 
+
+[2017-06-26 20:09:03] Debug: Radius: 252.107 
+
+[2017-06-26 20:09:04] Debug: 7
+[2017-06-26 20:09:04] Debug: match 1.777 s 
+
+[2017-06-26 20:09:04] Debug: f
+[2017-06-26 20:09:04] Debug: the angle is -0.574712??
+
+[2017-06-26 20:09:05] Debug: Radius: 273.404 
+
+[2017-06-26 20:09:05] Debug: Cycle out:45
+
+[2017-06-26 20:09:05] Debug: Cycle out:46
+
+[2017-06-26 20:09:05] Debug: Radius: 244.643 
+
+[2017-06-26 20:09:06] Debug: Radius: 253.369 
+
+[2017-06-26 20:09:07] Debug: 7
+[2017-06-26 20:09:07] Debug: match 1.536 s 
+
+[2017-06-26 20:09:07] Debug: Cycle out:47
+
+[2017-06-26 20:09:07] Debug: Radius: 276.171 
+
+[2017-06-26 20:09:08] Debug: Radius: 276.151 
+
+[2017-06-26 20:09:10] Debug: 7
+[2017-06-26 20:09:10] Debug: the match point less than 10
+[2017-06-26 20:09:10] Debug: Cycle out:48
+
+[2017-06-26 20:09:10] Debug: Cycle out:49
+
+[2017-06-26 20:09:10] Debug: Radius: 256.675 
+
+[2017-06-26 20:09:10] Debug: Radius: 270.314 
+
+[2017-06-26 20:09:12] Debug: 7
+[2017-06-26 20:09:12] Debug: match 1.835 s 
+
+[2017-06-26 20:09:12] Debug: Cycle out:50
+
+[2017-06-26 20:09:13] Debug: Cycle out:51
+
+[2017-06-26 20:09:13] Debug: Cycle out:52
+
+[2017-06-26 20:09:13] Debug: Radius: 273.136 
+
+[2017-06-26 20:09:14] Debug: Radius: 255.113 
+
+[2017-06-26 20:09:16] Debug: 7
+[2017-06-26 20:09:16] Debug: match 2.927 s 
+
+[2017-06-26 20:09:16] Debug: f
+[2017-06-26 20:09:16] Debug: the angle is -0.001558??
+
+[2017-06-26 20:09:17] Debug: Cycle out:53
+
+[2017-06-26 20:09:17] Debug: Radius: 267.181 
+
+[2017-06-26 20:09:17] Debug: Cycle out:54
+
+[2017-06-26 20:09:17] Debug: Radius: 283.651 
+
+[2017-06-26 20:09:18] Debug: Radius: 283.66 
+
+[2017-06-26 20:09:20] Debug: 7
+[2017-06-26 20:09:20] Debug: the match point less than 10
+[2017-06-26 20:09:20] Debug: Cycle out:55
+
+[2017-06-26 20:09:20] Debug: Radius: 285.293 
+
+[2017-06-26 20:09:21] Debug: Radius: 256.589 
+
+[2017-06-26 20:09:23] Debug: 7
+[2017-06-26 20:09:23] Debug: match 2.503 s 
+
+[2017-06-26 20:09:23] Debug: f
+[2017-06-26 20:09:23] Debug: the angle is 0.527292??
+
+[2017-06-26 20:09:23] Debug: Radius: 283.634 
+
+[2017-06-26 20:09:24] Debug: Cycle out:56
+
+[2017-06-26 20:09:24] Debug: Cycle out:57
+
+[2017-06-26 20:09:24] Debug: Radius: 265.75 
+
+[2017-06-26 20:09:25] Debug: Radius: 241.551 
+
+[2017-06-26 20:09:26] Debug: 7
+[2017-06-26 20:09:26] Debug: match 1.765 s 
+
+[2017-06-26 20:09:26] Debug: Cycle out:58
+
+[2017-06-26 20:09:27] Debug: Radius: 264.067 
+
+[2017-06-26 20:09:27] Debug: Radius: 267.097 
+
+[2017-06-26 20:09:28] Debug: 7
+[2017-06-26 20:09:28] Debug: match 1.727 s 
+
+[2017-06-26 20:09:29] Debug: Radius: 255.25 
+
+[2017-06-26 20:09:29] Debug: Radius: 241.537 
+
+[2017-06-26 20:09:31] Debug: 7
+[2017-06-26 20:09:31] Debug: match 1.652 s 
+
+[2017-06-26 20:09:31] Debug: Cycle out:59
+
+[2017-06-26 20:09:31] Debug: Radius: 271.794 
+
+[2017-06-26 20:09:31] Debug: Cycle out:60
+
+[2017-06-26 20:09:32] Debug: Cycle out:61
+
+[2017-06-26 20:09:32] Debug: Radius: 239.991 
+
+[2017-06-26 20:28:21] Debug: realplay start
+[2017-06-26 20:28:22] Debug: Cycle out:1
+
+[2017-06-26 20:28:22] Debug: Cycle out:2
+
+[2017-06-26 20:28:23] Debug: Radius: 270.1 
+
+[2017-06-26 20:28:23] Debug: Radius: 288.146 
+
+[2017-06-26 20:28:25] Debug: 7
+[2017-06-26 20:28:25] Debug: match 2.336 s 
+
+[2017-06-26 20:28:25] Debug: Cycle out:3
+
+[2017-06-26 20:28:26] Debug: Radius: 250.686 
+
+[2017-06-26 20:28:26] Debug: Radius: 271.707 
+
+[2017-06-26 21:14:54] Debug: realplay start
+[2017-06-26 21:14:55] Debug: Cycle out:1
+
+[2017-06-26 21:14:55] Debug: Cycle out:2
+
+[2017-06-26 21:14:56] Debug: Radius: 283.954 
+
+[2017-06-26 21:14:56] Debug: Radius: 250.756 
+
+[2017-06-26 21:14:58] Debug: match 2.413 s 
+
+[2017-06-26 21:14:58] Debug: Cycle out:3
+
+[2017-06-26 21:14:59] Debug: Cycle out:4
+
+[2017-06-26 21:14:59] Debug: Cycle out:5
+
+[2017-06-26 21:14:59] Debug: Cycle out:6
+
+[2017-06-26 21:15:00] Debug: Cycle out:7
+
+[2017-06-26 21:15:00] Debug: Radius: 246.049 
+
+[2017-06-26 21:15:00] Debug: Cycle out:8
+
+[2017-06-26 21:15:00] Debug: Radius: 267.256 
+
+[2017-06-26 21:15:01] Debug: Cycle out:9
+
+[2017-06-26 21:15:01] Debug: Radius: 268.642 
+
+[2017-06-26 21:15:01] Debug: Radius: 244.557 
+
+[2017-06-26 21:15:03] Debug: match 2.486 s 
+
+[2017-06-26 21:15:04] Debug: Radius: 267.234 
+
+[2017-06-26 21:15:04] Debug: Cycle out:10
+
+[2017-06-26 21:15:05] Debug: Radius: 270.251 
+
+[2017-06-26 21:15:05] Debug: Cycle out:11
+
+[2017-06-26 21:15:05] Debug: Cycle out:12
+
+[2017-06-26 21:15:05] Debug: Radius: 268.753 
+
+[2017-06-26 21:15:06] Debug: Radius: 241.549 
+
+[2017-06-26 21:19:20] Debug: realplay start
+[2017-06-26 21:19:21] Debug: Radius: 265.666 
+
+[2017-06-26 21:19:21] Debug: Radius: 280.778 
+
+[2017-06-26 21:19:24] Debug: match 2.369 s 
+
+[2017-06-26 21:19:24] Debug: Cycle out:1
+
+[2017-06-26 21:19:24] Debug: Cycle out:2
+
+[2017-06-26 21:19:24] Debug: Radius: 271.602 
+
+[2017-06-26 21:19:24] Debug: Radius: 282.253 
+
+[2017-06-26 21:19:27] Debug: match 2.535 s 
+
+[2017-06-26 21:19:27] Debug: Radius: 234.01 
+
+[2017-06-26 21:19:27] Debug: Radius: 270.121 
+
+[2017-06-26 21:19:29] Debug: match 1.545 s 
+
+[2017-06-26 21:19:29] Debug: f
+[2017-06-26 21:19:29] Debug: the angle is 0.395717??
+
+[2017-06-26 21:19:29] Debug: Radius: 276.24 
+
+[2017-06-26 21:19:30] Debug: Radius: 265.51 
+
+[2017-06-26 21:19:32] Debug: match 2.488 s 
+
+[2017-06-26 21:19:32] Debug: Cycle out:3
+
+[2017-06-26 21:19:33] Debug: Cycle out:4
+
+[2017-06-26 21:19:33] Debug: Cycle out:5
+
+[2017-06-26 21:19:33] Debug: Cycle out:6
+
+[2017-06-26 21:19:34] Debug: Cycle out:7
+
+[2017-06-26 21:19:34] Debug: Cycle out:8
+
+[2017-06-26 21:19:34] Debug: Cycle out:9
+
+[2017-06-26 21:19:35] Debug: Cycle out:10
+
+[2017-06-26 21:19:35] Debug: Radius: 282.251 
+
+[2017-06-26 21:19:35] Debug: Cycle out:11
+
+[2017-06-26 21:19:36] Debug: Cycle out:12
+
+[2017-06-26 21:19:36] Debug: Radius: 270.182 
+
+[2017-06-26 21:19:36] Debug: Radius: 247.58 
+
+[2017-06-26 21:19:39] Debug: match 3.359 s 
+
+[2017-06-26 21:19:40] Debug: Cycle out:13
+
+[2017-06-26 21:19:40] Debug: Radius: 283.598 
+
+[2017-06-26 21:19:40] Debug: Cycle out:14
+
+[2017-06-26 21:19:41] Debug: Cycle out:15
+
+[2017-06-26 21:19:41] Debug: Cycle out:16
+
+[2017-06-26 21:19:41] Debug: Cycle out:17
+
+[2017-06-26 21:19:42] Debug: Cycle out:18
+
+[2017-06-26 21:19:42] Debug: Cycle out:19
+
+[2017-06-26 21:19:42] Debug: Radius: 252.098 
+
+[2017-06-26 21:19:43] Debug: Cycle out:20
+
+[2017-06-26 21:19:43] Debug: Radius: 230.858 
+
+[2017-06-26 21:19:43] Debug: Cycle out:21
+
+[2017-06-26 21:19:43] Debug: Cycle out:22
+
+[2017-06-26 21:19:44] Debug: Radius: 262.616 
+
+[2017-06-26 21:19:44] Debug: Cycle out:23
+
+[2017-06-26 21:19:45] Debug: Radius: 267.275 
+
+[2017-06-26 21:19:45] Debug: Cycle out:24
+
+[2017-06-26 21:19:46] Debug: Cycle out:25
+
+[2017-06-26 21:19:46] Debug: Cycle out:26
+
+[2017-06-26 21:19:46] Debug: Cycle out:27
+
+[2017-06-26 21:19:47] Debug: Cycle out:28
+
+[2017-06-26 21:19:47] Debug: Radius: 280.638 
+
+[2017-06-26 21:19:47] Debug: Cycle out:29
+
+[2017-06-26 21:19:48] Debug: Cycle out:30
+
+[2017-06-26 21:19:48] Debug: Radius: 270.178 
+
+[2017-06-26 21:19:48] Debug: Radius: 265.678 
+
+[2017-06-26 21:19:50] Debug: match 2.417 s 
+
+[2017-06-26 21:19:51] Debug: Cycle out:31
+
+[2017-06-26 21:19:51] Debug: Radius: 237.033 
+
+[2017-06-26 21:19:52] Debug: Radius: 267.234 
+
+[2017-06-26 21:19:53] Debug: match 1.983 s 
+
+[2017-06-26 21:19:54] Debug: Cycle out:32
+
+[2017-06-26 21:19:54] Debug: Radius: 264.062 
+
+[2017-06-26 21:19:54] Debug: Cycle out:33
+
+[2017-06-26 21:19:55] Debug: Radius: 268.719 
+
+[2017-06-26 21:19:55] Debug: Radius: 292.819 
+
+[2017-06-26 21:19:57] Debug: match 2.478 s 
+
+[2017-06-26 21:19:57] Debug: f
+[2017-06-26 21:19:57] Debug: the angle is -9.281903??
+
+[2017-06-26 21:19:58] Debug: Radius: 270.347 
+
+[2017-06-26 21:19:58] Debug: Cycle out:34
+
+[2017-06-26 21:19:58] Debug: Cycle out:35
+
+[2017-06-26 21:19:59] Debug: Cycle out:36
+
+[2017-06-26 21:19:59] Debug: Radius: 282.377 
+
+[2017-06-26 21:19:59] Debug: Cycle out:37
+
+[2017-06-26 21:19:59] Debug: Radius: 255.157 
+
+[2017-06-26 21:20:00] Debug: Radius: 271.853 
+
+[2017-06-26 21:20:02] Debug: match 2.403 s 
+
+[2017-06-26 21:20:02] Debug: Radius: 271.598 
+
+[2017-06-26 21:20:03] Debug: Cycle out:38
+
+[2017-06-26 21:20:03] Debug: Radius: 270.057 
+
+[2017-06-26 21:20:03] Debug: Cycle out:39
+
+[2017-06-26 21:20:03] Debug: Cycle out:40
+
+[2017-06-26 21:20:04] Debug: Radius: 276.269 
+
+[2017-06-26 21:20:04] Debug: Radius: 283.706 
+
+[2017-06-26 21:20:07] Debug: match 3.169 s 
+
+[2017-06-26 21:20:07] Debug: f
+[2017-06-26 21:20:07] Debug: the angle is 0.047967??
+
+[2017-06-26 21:20:07] Debug: Cycle out:41
+
+[2017-06-26 21:20:08] Debug: Radius: 270.172 
+
+[2017-06-26 21:20:08] Debug: Radius: 274.695 
+
+[2017-06-26 21:20:12] Debug: match 3.723 s 
+
+[2017-06-26 21:20:12] Debug: Cycle out:42
+
+[2017-06-26 21:20:12] Debug: Cycle out:43
+
+[2017-06-26 21:20:13] Debug: Cycle out:44
+
+[2017-06-26 21:20:13] Debug: Radius: 244.539 
+
+[2017-06-26 21:20:13] Debug: Cycle out:45
+
+[2017-06-26 21:20:14] Debug: Cycle out:46
+
+[2017-06-26 21:20:14] Debug: Cycle out:47
+
+[2017-06-26 21:20:14] Debug: Radius: 274.608 
+
+[2017-06-26 21:20:15] Debug: Cycle out:48
+
+[2017-06-26 21:20:15] Debug: Radius: 255.247 
+
+[2017-06-26 21:20:16] Debug: Cycle out:49
+
+[2017-06-26 21:20:16] Debug: Cycle out:50
+
+[2017-06-26 21:20:16] Debug: Cycle out:51
+
+[2017-06-26 21:20:17] Debug: Cycle out:52
+
+[2017-06-26 21:20:17] Debug: Radius: 279.095 
+
+[2017-06-26 21:20:17] Debug: Cycle out:53
+
+[2017-06-26 21:20:18] Debug: Radius: 273.113 
+
+[2017-06-26 21:20:18] Debug: Cycle out:54
+
+[2017-06-26 21:20:18] Debug: Cycle out:55
+
+[2017-06-26 21:20:19] Debug: Cycle out:56
+
+[2017-06-26 21:20:19] Debug: Radius: 255.095 
+
+[2017-06-26 21:20:19] Debug: Radius: 239.898 
+
+[2017-06-26 21:20:22] Debug: match 2.982 s 
+
+[2017-06-26 21:20:23] Debug: Radius: 283.807 
+
+[2017-06-26 21:20:23] Debug: Cycle out:57
+
+[2017-06-26 21:20:23] Debug: Cycle out:58
+
+[2017-06-26 21:20:24] Debug: Cycle out:59
+
+[2017-06-26 21:20:24] Debug: Cycle out:60
+
+[2017-06-26 21:20:24] Debug: Radius: 264.108 
+
+[2017-06-26 21:20:24] Debug: Radius: 291.22 
+
+[2017-06-26 21:20:27] Debug: match 2.925 s 
+
+[2017-06-26 21:20:27] Debug: f
+[2017-06-26 21:20:27] Debug: the angle is 0.634973??
+
+[2017-06-26 21:20:27] Debug: Radius: 270.17 
+
+[2017-06-26 21:20:28] Debug: Cycle out:61
+
+[2017-06-26 21:20:28] Debug: Radius: 270.253 
+
+[2017-06-26 21:20:28] Debug: Cycle out:62
+
+[2017-06-26 21:20:29] Debug: Cycle out:63
+
+[2017-06-26 21:20:29] Debug: Radius: 268.687 
+
+[2017-06-26 21:20:29] Debug: Radius: 292.814 
+
+[2017-06-26 21:21:11] Debug: realplay start
+[2017-06-26 21:21:12] Debug: Cycle out:1
+
+[2017-06-26 21:21:12] Debug: Radius: 267.146 
+
+[2017-06-26 21:21:12] Debug: Radius: 248.989 
+
+[2017-06-26 21:21:15] Debug: match 2.294 s 
+
+[2017-06-26 21:21:15] Debug: Radius: 276.212 
+
+[2017-06-26 21:21:15] Debug: Cycle out:2
+
+[2017-06-26 21:21:15] Debug: Radius: 256.682 
+
+[2017-06-26 21:21:15] Debug: Radius: 244.506 
+
+[2017-06-26 21:21:17] Debug: match 2.014 s 
+
+[2017-06-26 21:21:18] Debug: Cycle out:3
+
+[2017-06-26 21:21:18] Debug: Radius: 255.094 
+
+[2017-06-26 21:21:18] Debug: Radius: 247.52 
+
+[2017-06-26 21:21:20] Debug: match 1.993 s 
+
+[2017-06-26 21:21:20] Debug: Cycle out:4
+
+[2017-06-26 21:21:20] Debug: Radius: 274.81 
+
+[2017-06-26 21:21:21] Debug: Radius: 253.6 
+
+[2017-06-26 21:21:23] Debug: the match point less than 10
+[2017-06-26 21:21:23] Debug: Radius: 264.264 
+
+[2017-06-26 21:21:23] Debug: Radius: 247.608 
+
+[2017-06-26 21:21:26] Debug: match 2.387 s 
+
+[2017-06-26 21:21:26] Debug: Radius: 292.755 
+
+[2017-06-26 21:21:26] Debug: Cycle out:5
+
+[2017-06-26 21:21:26] Debug: Cycle out:6
+
+[2017-06-26 21:21:26] Debug: Cycle out:7
+
+[2017-06-26 21:21:26] Debug: Cycle out:8
+
+[2017-06-26 21:21:27] Debug: Radius: 277.691 
+
+[2017-06-26 21:21:27] Debug: Cycle out:9
+
+[2017-06-26 21:21:27] Debug: Radius: 286.711 
+
+[2017-06-26 21:21:27] Debug: Cycle out:10
+
+[2017-06-26 21:21:28] Debug: Radius: 279.278 
+
+[2017-06-26 21:21:28] Debug: Radius: 235.541 
+
+[2017-06-26 21:21:30] Debug: match 2.739 s 
+
+[2017-06-26 21:21:31] Debug: Cycle out:11
+
+[2017-06-26 21:21:31] Debug: Cycle out:12
+
+[2017-06-26 21:21:31] Debug: Radius: 274.756 
+
+[2017-06-26 21:21:31] Debug: Radius: 253.583 
+
+[2017-06-26 21:21:34] Debug: match 2.493 s 
+
+[2017-06-26 21:21:34] Debug: Cycle out:13
+
+[2017-06-26 21:21:34] Debug: Radius: 241.561 
+
+[2017-06-26 21:21:34] Debug: Cycle out:14
+
+[2017-06-26 21:21:34] Debug: Cycle out:15
+
+[2017-06-26 21:21:34] Debug: Cycle out:16
+
+[2017-06-26 21:21:35] Debug: Radius: 271.834 
+
+[2017-06-26 21:21:35] Debug: Radius: 274.854 
+
+[2017-06-26 21:21:37] Debug: match 2.385 s 
+
+[2017-06-26 21:21:37] Debug: f
+[2017-06-26 21:21:37] Debug: the angle is -3.088898??
+
+[2017-06-26 21:21:37] Debug: Radius: 255.157 
+
+[2017-06-26 21:21:38] Debug: Cycle out:17
+
+[2017-06-26 21:21:38] Debug: Radius: 268.651 
+
+[2017-06-26 21:21:38] Debug: Cycle out:18
+
+[2017-06-26 21:21:38] Debug: Cycle out:19
+
+[2017-06-26 21:21:38] Debug: Radius: 283.657 
+
+[2017-06-26 21:21:39] Debug: Radius: 264.14 
+
+[2017-06-26 21:21:42] Debug: match 3.21 s 
+
+[2017-06-26 21:21:42] Debug: f
+[2017-06-26 21:21:42] Debug: the angle is 0.349153??
+
+[2017-06-26 21:21:42] Debug: Radius: 271.684 
+
+[2017-06-26 21:21:42] Debug: Radius: 277.832 
+
+[2017-06-26 21:21:45] Debug: match 2.592 s 
+
+[2017-06-26 21:21:45] Debug: f
+[2017-06-26 21:21:45] Debug: the angle is 0.721138??
+
+[2017-06-26 21:21:45] Debug: Cycle out:20
+
+[2017-06-26 21:21:45] Debug: Cycle out:21
+
+[2017-06-26 21:21:46] Debug: Radius: 268.809 
+
+[2017-06-26 21:21:46] Debug: No cycle:22
+
+[2017-06-26 21:21:46] Debug: Cycle out:23
+
+[2017-06-26 21:21:46] Debug: Cycle out:24
+
+[2017-06-26 21:21:46] Debug: Radius: 261.274 
+
+[2017-06-26 21:21:46] Debug: Cycle out:25
+
+[2017-06-26 21:21:46] Debug: Cycle out:26
+
+[2017-06-26 21:21:47] Debug: Cycle out:27
+
+[2017-06-26 21:21:47] Debug: Cycle out:28
+
+[2017-06-26 21:21:47] Debug: Cycle out:29
+
+[2017-06-26 21:21:47] Debug: No cycle:30
+
+[2017-06-26 21:21:47] Debug: No cycle:31
+
+[2017-06-26 21:21:47] Debug: No cycle:32
+
+[2017-06-26 21:21:48] Debug: No cycle:33
+
+[2017-06-26 21:21:48] Debug: No cycle:34
+
+[2017-06-26 21:21:48] Debug: No cycle:35
+
+[2017-06-26 21:21:48] Debug: No cycle:36
+
+[2017-06-26 21:21:48] Debug: No cycle:37
+
+[2017-06-26 21:21:48] Debug: No cycle:38
+
+[2017-06-26 21:21:49] Debug: No cycle:39
+
+[2017-06-26 21:21:49] Debug: No cycle:40
+
+[2017-06-26 21:21:49] Debug: No cycle:41
+
+[2017-06-26 21:21:49] Debug: No cycle:42
+
+[2017-06-26 21:21:49] Debug: No cycle:43
+
+[2017-06-26 21:21:49] Debug: No cycle:44
+
+[2017-06-26 21:21:50] Debug: No cycle:45
+
+[2017-06-26 21:21:50] Debug: Cycle out:46
+
+[2017-06-26 21:21:50] Debug: No cycle:47
+
+[2017-06-26 21:21:50] Debug: Cycle out:48
+
+[2017-06-26 21:21:51] Debug: Cycle out:49
+
+[2017-06-26 21:21:51] Debug: Cycle out:50
+
+[2017-06-26 21:21:51] Debug: Cycle out:51
+
+[2017-06-26 21:21:51] Debug: Cycle out:52
+
+[2017-06-26 21:21:51] Debug: Radius: 264.219 
+
+[2017-06-26 21:21:52] Debug: Cycle out:53
+
+[2017-06-26 21:21:52] Debug: Radius: 282.409 
+
+[2017-06-26 21:21:52] Debug: Cycle out:54
+
+[2017-06-26 21:21:52] Debug: Radius: 283.751 
+
+[2017-06-26 21:21:52] Debug: Radius: 270.398 
+
+[2017-06-26 21:21:55] Debug: match 2.483 s 
+
+[2017-06-26 21:21:55] Debug: Radius: 264.253 
+
+[2017-06-26 21:21:55] Debug: Radius: 270.25 
+
+[2017-06-26 21:21:58] Debug: match 2.393 s 
+
+[2017-06-26 21:21:58] Debug: f
+[2017-06-26 21:21:58] Debug: the angle is 0.216897??
+
+[2017-06-26 21:21:58] Debug: Cycle out:55
+
+[2017-06-26 21:21:58] Debug: Cycle out:56
+
+[2017-06-26 21:21:58] Debug: Cycle out:57
+
+[2017-06-26 21:21:58] Debug: Cycle out:58
+
+[2017-06-26 21:21:59] Debug: Radius: 270.229 
+
+[2017-06-26 21:21:59] Debug: Cycle out:59
+
+[2017-06-26 21:21:59] Debug: Cycle out:60
+
+[2017-06-26 21:21:59] Debug: Radius: 289.781 
+
+[2017-06-26 21:21:59] Debug: Radius: 270.209 
+
+[2017-06-26 21:22:02] Debug: match 2.764 s 
+
+[2017-06-26 21:22:02] Debug: f
+[2017-06-26 21:22:02] Debug: the angle is 0.723458??
+
+[2017-06-26 21:22:02] Debug: Radius: 267.177 
+
+[2017-06-26 21:22:02] Debug: Radius: 238.524 
+
+[2017-06-26 21:22:05] Debug: match 2.278 s 
+
+[2017-06-26 21:22:05] Debug: Radius: 289.764 
+
+[2017-06-26 21:22:05] Debug: Radius: 273.418 
+
+[2017-06-26 21:22:08] Debug: match 2.886 s 
+
+[2017-06-26 21:22:08] Debug: f
+[2017-06-26 21:22:08] Debug: the angle is -0.003745??
+
+[2017-06-26 21:22:08] Debug: Radius: 283.79 
+
+[2017-06-26 21:22:08] Debug: Radius: 234.122 
+
+[2017-06-26 21:22:10] Debug: match 2.358 s 
+
+[2017-06-26 21:22:11] Debug: No cycle:61
+
+[2017-06-26 21:22:11] Debug: Cycle out:62
+
+[2017-06-26 21:22:11] Debug: Radius: 223.624 
+
+[2017-06-26 21:22:11] Debug: Radius: 228.165 
+
+[2017-06-26 21:22:12] Debug: match 1.138 s 
+
+[2017-06-26 21:22:12] Debug: f
+[2017-06-26 21:22:12] Debug: the angle is 0.655788??
+
+[2017-06-26 21:22:12] Debug: No cycle:63
+
+[2017-06-26 21:22:13] Debug: No cycle:64
+
+[2017-06-26 21:22:13] Debug: No cycle:65
+
+[2017-06-26 21:22:13] Debug: No cycle:66
+
+[2017-06-26 21:22:13] Debug: Cycle out:67
+
+[2017-06-26 21:22:13] Debug: Cycle out:68
+
+[2017-06-26 21:22:13] Debug: Cycle out:69
+
+[2017-06-26 21:22:13] Debug: Cycle out:70
+
+[2017-06-26 21:22:14] Debug: Cycle out:71
+
+[2017-06-26 21:22:14] Debug: Cycle out:72
+
+[2017-06-26 21:22:14] Debug: Cycle out:73
+
+[2017-06-26 21:22:14] Debug: Cycle out:74
+
+[2017-06-26 21:22:14] Debug: Cycle out:75
+
+[2017-06-26 21:22:14] Debug: Radius: 259.24 
+
+[2017-06-26 21:22:15] Debug: Cycle out:76
+
+[2017-06-26 21:22:15] Debug: Cycle out:77
+
+[2017-06-26 21:22:15] Debug: Cycle out:78
+
+[2017-06-26 21:22:15] Debug: Cycle out:79
+
+[2017-06-26 21:22:16] Debug: Cycle out:80
+
+[2017-06-26 21:22:16] Debug: Radius: 203.762 
+
+[2017-06-26 21:22:16] Debug: Radius: 240.556 
+
+[2017-06-26 21:22:17] Debug: match 0.718 s 
+
+[2017-06-26 21:22:17] Debug: f
+[2017-06-26 21:22:17] Debug: the angle is 1.895363??
+
+[2017-06-26 21:22:17] Debug: Radius: 205.155 
+
+[2017-06-26 21:22:17] Debug: Cycle out:81
+
+[2017-06-26 21:22:17] Debug: Radius: 208.52 
+
+[2017-06-26 21:22:17] Debug: Radius: 208.604 
+
+[2017-06-26 21:22:18] Debug: the match point less than 10
+[2017-06-26 21:22:18] Debug: Radius: 213.074 
+
+[2017-06-26 21:22:18] Debug: Cycle out:82
+
+[2017-06-26 21:22:18] Debug: Radius: 208.441 
+
+[2017-06-26 21:22:18] Debug: Cycle out:83
+
+[2017-06-26 21:22:19] Debug: Cycle out:84
+
+[2017-06-26 21:22:19] Debug: Cycle out:85
+
+[2017-06-26 21:22:19] Debug: Cycle out:86
+
+[2017-06-26 21:22:19] Debug: Cycle out:87
+
+[2017-06-26 21:22:19] Debug: Cycle out:88
+
+[2017-06-26 21:22:19] Debug: Cycle out:89
+
+[2017-06-26 21:22:20] Debug: Cycle out:90
+
+[2017-06-26 21:22:20] Debug: Cycle out:91
+
+[2017-06-26 21:22:20] Debug: Cycle out:92
+
+[2017-06-26 21:22:20] Debug: Cycle out:93
+
+[2017-06-26 21:22:20] Debug: Cycle out:94
+
+[2017-06-26 21:22:20] Debug: Cycle out:95
+
+[2017-06-26 21:22:20] Debug: Cycle out:96
+
+[2017-06-26 21:22:21] Debug: Cycle out:97
+
+[2017-06-26 21:22:21] Debug: Cycle out:98
+
+[2017-06-26 21:22:21] Debug: Cycle out:99
+
+[2017-06-26 21:22:21] Debug: Cycle out:100
+
+[2017-06-26 21:22:21] Debug: Cycle out:101
+
+[2017-06-26 21:22:21] Debug: Cycle out:102
+
+[2017-06-26 21:22:22] Debug: Cycle out:103
+
+[2017-06-26 21:22:22] Debug: Cycle out:104
+
+[2017-06-26 21:22:22] Debug: Cycle out:105
+
+[2017-06-26 21:22:22] Debug: Cycle out:106
+
+[2017-06-26 21:22:22] Debug: Cycle out:107
+
+[2017-06-26 21:22:22] Debug: Cycle out:108
+
+[2017-06-26 21:22:23] Debug: Cycle out:109
+
+[2017-06-26 21:22:23] Debug: Cycle out:110
+
+[2017-06-26 21:22:23] Debug: Cycle out:111
+
+[2017-06-26 21:22:23] Debug: Cycle out:112
+
+[2017-06-26 21:22:23] Debug: Cycle out:113
+
+[2017-06-26 21:22:23] Debug: Cycle out:114
+
+[2017-06-26 21:22:24] Debug: Cycle out:115
+
+[2017-06-26 21:22:24] Debug: Cycle out:116
+
+[2017-06-26 21:22:24] Debug: Cycle out:117
+
+[2017-06-26 21:22:24] Debug: Cycle out:118
+
+[2017-06-26 21:22:24] Debug: Cycle out:119
+
+[2017-06-26 21:22:24] Debug: Cycle out:120
+
+[2017-06-26 21:22:25] Debug: Cycle out:121
+
+[2017-06-26 21:22:25] Debug: Cycle out:122
+
+[2017-06-26 21:22:25] Debug: Cycle out:123
+
+[2017-06-26 21:22:25] Debug: Cycle out:124
+
+[2017-06-26 21:22:25] Debug: Cycle out:125
+
+[2017-06-26 21:22:25] Debug: Cycle out:126
+
+[2017-06-26 21:22:25] Debug: Cycle out:127
+
+[2017-06-26 21:22:26] Debug: Cycle out:128
+
+[2017-06-26 21:22:26] Debug: Cycle out:129
+
+[2017-06-26 21:22:26] Debug: Cycle out:130
+
+[2017-06-26 21:22:26] Debug: Radius: 217.774 
+
+[2017-06-26 21:22:26] Debug: Cycle out:131
+
+[2017-06-26 21:22:26] Debug: Cycle out:132
+
+[2017-06-26 21:22:27] Debug: Cycle out:133
+
+[2017-06-26 21:22:27] Debug: Cycle out:134
+
+[2017-06-26 21:22:27] Debug: Cycle out:135
+
+[2017-06-26 21:22:27] Debug: Cycle out:136
+
+[2017-06-26 21:22:27] Debug: Radius: 229.789 
+
+[2017-06-26 21:22:28] Debug: Cycle out:137
+
+[2017-06-26 21:22:28] Debug: Cycle out:138
+
+[2017-06-26 21:22:28] Debug: Cycle out:139
+
+[2017-06-26 21:22:28] Debug: Cycle out:140
+
+[2017-06-26 21:22:28] Debug: Cycle out:141
+
+[2017-06-26 21:22:29] Debug: Radius: 202.251 
+
+[2017-06-26 21:22:29] Debug: Cycle out:142
+
+[2017-06-26 21:22:29] Debug: Cycle out:143
+
+[2017-06-26 21:22:29] Debug: Cycle out:144
+
+[2017-06-26 21:22:29] Debug: Cycle out:145
+
+[2017-06-26 21:22:29] Debug: Cycle out:146
+
+[2017-06-26 21:22:30] Debug: Cycle out:147
+
+[2017-06-26 21:22:30] Debug: Cycle out:148
+
+[2017-06-26 21:22:30] Debug: Cycle out:149
+
+[2017-06-26 21:22:30] Debug: Cycle out:150
+
+[2017-06-26 21:22:30] Debug: Cycle out:151
+
+[2017-06-26 21:22:30] Debug: Cycle out:152
+
+[2017-06-26 21:22:31] Debug: Cycle out:153
+
+[2017-06-26 21:22:31] Debug: Cycle out:154
+
+[2017-06-26 21:22:31] Debug: Cycle out:155
+
+[2017-06-26 21:22:31] Debug: Cycle out:156
+
+[2017-06-26 21:22:31] Debug: Cycle out:157
+
+[2017-06-26 21:22:31] Debug: Cycle out:158
+
+[2017-06-26 21:22:32] Debug: No cycle:159
+
+[2017-06-26 21:22:32] Debug: No cycle:160
+
+[2017-06-26 21:22:32] Debug: Radius: 220.466 
+
+[2017-06-26 21:22:32] Debug: Radius: 242.112 
+
+[2017-06-26 21:22:32] Debug: the match point less than 10
+[2017-06-26 21:22:33] Debug: Radius: 213.209 
+
+[2017-06-26 21:22:33] Debug: Cycle out:161
+
+[2017-06-26 21:22:33] Debug: Radius: 292.751 
+
+[2017-06-26 21:22:33] Debug: Radius: 270.154 
+
+[2017-06-26 21:22:36] Debug: match 2.74 s 
+
+[2017-06-26 21:22:36] Debug: f
+[2017-06-26 21:22:36] Debug: the angle is -1.091935??
+
+[2017-06-26 21:22:36] Debug: Cycle out:162
+
+[2017-06-26 21:22:36] Debug: Radius: 250.921 
+
+[2017-06-26 21:22:36] Debug: Radius: 268.709 
+
+[2017-06-26 21:22:38] Debug: match 2.072 s 
+
+[2017-06-26 21:22:38] Debug: f
+[2017-06-26 21:22:38] Debug: the angle is 0.714528??
+
+[2017-06-26 21:22:39] Debug: Cycle out:163
+
+[2017-06-26 21:22:39] Debug: Radius: 252.048 
+
+[2017-06-26 21:22:39] Debug: Cycle out:164
+
+[2017-06-26 21:22:40] Debug: Cycle out:165
+
+[2017-06-26 21:22:40] Debug: Cycle out:166
+
+[2017-06-26 21:22:40] Debug: Radius: 270.209 
+
+[2017-06-26 21:22:40] Debug: Cycle out:167
+
+[2017-06-26 21:22:40] Debug: Radius: 282.309 
+
+[2017-06-26 21:22:40] Debug: Radius: 258.126 
+
+[2017-06-26 21:22:43] Debug: match 2.778 s 
+
+[2017-06-26 21:22:43] Debug: Cycle out:168
+
+[2017-06-26 21:22:44] Debug: Cycle out:169
+
+[2017-06-26 21:22:44] Debug: Cycle out:170
+
+[2017-06-26 21:22:44] Debug: Radius: 282.248 
+
+[2017-06-26 21:22:44] Debug: Cycle out:171
+
+[2017-06-26 21:22:45] Debug: Cycle out:172
+
+[2017-06-26 21:22:45] Debug: Radius: 267.124 
+
+[2017-06-26 21:22:45] Debug: Cycle out:173
+
+[2017-06-26 21:22:46] Debug: Cycle out:174
+
+[2017-06-26 21:22:46] Debug: Cycle out:175
+
+[2017-06-26 21:22:46] Debug: Cycle out:176
+
+[2017-06-26 21:22:46] Debug: Cycle out:177
+
+[2017-06-26 21:22:46] Debug: Radius: 276.266 
+
+[2017-06-26 21:22:47] Debug: Cycle out:178
+
+[2017-06-26 21:22:47] Debug: Cycle out:179
+
+[2017-06-26 21:22:47] Debug: Radius: 268.75 
+
+[2017-06-26 21:22:47] Debug: Radius: 267.142 
+
+[2017-06-26 21:22:50] Debug: match 2.767 s 
+
+[2017-06-26 21:22:50] Debug: Radius: 282.255 
+
+[2017-06-26 21:22:50] Debug: Radius: 274.751 
+
+[2017-06-26 21:22:54] Debug: match 3.397 s 
+
+[2017-06-26 21:22:54] Debug: Cycle out:180
+
+[2017-06-26 21:22:54] Debug: Cycle out:181
+
+[2017-06-26 21:22:54] Debug: Radius: 232.393 
+
+[2017-06-26 21:22:55] Debug: Radius: 270.251 
+
+[2017-06-26 21:22:56] Debug: match 1.926 s 
+
+[2017-06-26 21:22:57] Debug: Cycle out:182
+
+[2017-06-26 21:22:57] Debug: Cycle out:183
+
+[2017-06-26 21:22:57] Debug: Radius: 239.963 
+
+[2017-06-26 21:22:57] Debug: Radius: 270.173 
+
+[2017-06-26 21:22:59] Debug: match 1.819 s 
+
+[2017-06-26 21:22:59] Debug: Cycle out:184
+
+[2017-06-26 21:23:00] Debug: Cycle out:185
+
+[2017-06-26 21:23:00] Debug: Radius: 273.253 
+
+[2017-06-26 21:23:00] Debug: Radius: 264.25 
+
+[2017-06-26 21:23:03] Debug: match 2.616 s 
+
+[2017-06-26 21:23:03] Debug: f
+[2017-06-26 21:23:03] Debug: the angle is -0.426065??
+
+[2017-06-26 21:23:03] Debug: Radius: 271.643 
+
+[2017-06-26 21:23:03] Debug: Cycle out:186
+
+[2017-06-26 21:23:03] Debug: Cycle out:187
+
+[2017-06-26 21:23:03] Debug: Radius: 252.147 
+
+[2017-06-26 21:23:04] Debug: Radius: 283.688 
+
+[2017-06-26 23:16:11] Debug: realplay start
+[2017-06-29 18:42:14] Debug: realplay start
+[2017-06-29 18:49:07] Debug: min_dist 4 
+
+[2017-06-29 18:49:07] Debug: match 0.338 s 
+
+[2017-06-29 18:49:08] Debug: the angle is -0.077574??
+
+[2017-07-03 14:47:33] Debug: Login error, 7
+
+[2017-07-03 14:47:34] Debug: realplay start
+[2017-07-03 14:47:41] Debug: Login error, 7
+
+[2017-07-03 14:47:41] Debug: realplay start
+[2017-07-05 01:29:56] Warning: ShellExecute 'd:%01.txt' failed (error 2).
+[2017-07-05 01:29:59] Warning: ShellExecute 'd:%01.txt' failed (error 2).
+[2017-07-05 01:30:00] Warning: ShellExecute 'd:%01.txt' failed (error 2).
+[2017-07-05 01:30:02] Warning: ShellExecute 'd:%01.txt' failed (error 2).
+[2017-07-05 01:31:10] Warning: ShellExecute 'd:%5C1.txt' failed (error 2).
+[2017-07-05 01:31:11] Warning: ShellExecute 'd:%5C1.txt' failed (error 2).
+[2017-07-05 01:32:03] Warning: QTextBrowser: No document for www.baidu.com
+[2017-07-05 01:32:40] Warning: QTextBrowser: No document for www.baidu.com
+[2017-07-05 01:42:06] Warning: QTextBrowser: No document for www.baidu.com
+[2017-07-05 01:53:59] Warning: QFSFileEngine::open: No file name specified
+[2017-07-05 01:53:59] Warning: QTextBrowser: No document for http://www.csdn.net/
+[2017-07-05 10:27:08] Warning: QFSFileEngine::open: No file name specified
+[2017-07-05 10:27:08] Warning: QTextBrowser: No document for http://www.csdn.net/
+[2017-07-05 10:30:12] Warning: ShellExecute 'd:%5C1.txt' failed (error 2).
+[2017-07-05 10:30:15] Warning: ShellExecute 'd:%5C1.txt' failed (error 2).
+[2017-07-05 10:30:17] Warning: ShellExecute 'd:%5C1.txt' failed (error 2).
+[2017-07-05 15:30:29] Warning: QTextBrowser: No document for file:///C:/windows
+[2017-07-05 15:30:52] Warning: QTextBrowser: No document for file:///C:/windows

@@ -6,19 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>627</width>
-    <height>486</height>
+    <width>949</width>
+    <height>710</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QGridLayout" name="gridLayout_3">
+   <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
        <number>0</number>
+      </property>
+      <property name="documentMode">
+       <bool>true</bool>
       </property>
       <widget class="QWidget" name="checkTab">
        <attribute name="title">
@@ -26,31 +29,66 @@
        </attribute>
        <layout class="QGridLayout" name="gridLayout">
         <item row="0" column="0">
-         <widget class="QGraphicsView" name="graphicsView1">
+         <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+          <item>
+           <widget class="QLabel" name="imageLabel1">
+            <property name="minimumSize">
+             <size>
+              <width>480</width>
+              <height>270</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="imageLabel2">
+            <property name="minimumSize">
+             <size>
+              <width>480</width>
+              <height>270</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <widget class="QTextBrowser" name="logBrowser">
           <property name="minimumSize">
            <size>
-            <width>192</width>
-            <height>108</height>
+            <width>400</width>
+            <height>0</height>
            </size>
           </property>
-         </widget>
-        </item>
-        <item row="0" column="1" rowspan="2">
-         <widget class="QTextBrowser" name="logBrowser"/>
-        </item>
-        <item row="1" column="0">
-         <widget class="QGraphicsView" name="graphicsView2">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
+          <property name="lineWidth">
+           <number>1</number>
           </property>
-          <property name="minimumSize">
-           <size>
-            <width>192</width>
-            <height>108</height>
-           </size>
+          <property name="midLineWidth">
+           <number>0</number>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="openExternalLinks">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -70,7 +108,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>627</width>
+     <width>949</width>
      <height>30</height>
     </rect>
    </property>
@@ -87,7 +125,15 @@
     </widget>
     <addaction name="menuCamera"/>
    </widget>
+   <widget class="QMenu" name="menu_Settings">
+    <property name="title">
+     <string>&amp;Settings</string>
+    </property>
+    <addaction name="action_Open_ini"/>
+    <addaction name="action_Load_ini"/>
+   </widget>
    <addaction name="menu_Tools"/>
+   <addaction name="menu_Settings"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -109,6 +155,16 @@
    </property>
    <property name="text">
     <string>&amp;Stop</string>
+   </property>
+  </action>
+  <action name="action_Open_ini">
+   <property name="text">
+    <string>&amp;Open ini</string>
+   </property>
+  </action>
+  <action name="action_Load_ini">
+   <property name="text">
+    <string>&amp;Load ini</string>
    </property>
   </action>
  </widget>

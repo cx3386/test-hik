@@ -30,11 +30,12 @@ void CALLBACK DecCBFun(long nPort, char * pBuf, long nSize, FRAME_INFO * pFrameI
 	long lFrameType = pFrameInfo->nType;
 	if (lFrameType == T_YV12) {
 
-		Mat pImg(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC3);
+		Mat pImg(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC1);	//pImg = Gray
 
 		Mat src(pFrameInfo->nHeight + pFrameInfo->nHeight / 2, pFrameInfo->nWidth, CV_8UC1, pBuf);
 		cvtColor(src, pImg, CV_YUV2GRAY_YV12);
-
+		//imshow("IPCamera", pImg);
+		//waitKey(1);
 		mutex.lock();
         //if (isProcessed == false)
             //imageProcessed.wait(&mutex);
@@ -43,12 +44,12 @@ void CALLBACK DecCBFun(long nPort, char * pBuf, long nSize, FRAME_INFO * pFrameI
         imageNeedProcess.wakeOne();
 		mutex.unlock();
 		//  Sleep(-1);
-		//imshow("IPCamera", pImg);
+		
         //waitKey(1);//waitkey is used for event process in opencv gui.
 
 	}
 
-	gbHandling = 3;//every 3 frame
+	gbHandling = 7;//every 8 frame
 
 }
 
@@ -159,6 +160,7 @@ BOOL HikVision::hikRealPlay(HWND h)
 
 	lRealPlayHandle = NET_DVR_RealPlay_V40(lUserID, &struPlayInfo, fRealDataCallBack, NULL);
 
+	//NET_DVR_SaveRealData(lRealPlayHandle, sFileName);
 	if (lRealPlayHandle < 0) {
 		qDebug("NET_DVR_RealPlay_V40 error\n");
 		qDebug("%d\n", NET_DVR_GetLastError());

@@ -23,7 +23,10 @@ public:
   BOOL hikRealPlay(HWND handle);
   BOOL hikStopRealPlay();
   LONG lUserID;
+  //void hikStartSave();
+  //void hikStopSave();
   //	NET_DVR_DEVICEINFO_V30 struDeviceInfo;
 private:
   LONG lRealPlayHandle;
+  char *sFileName;
 };

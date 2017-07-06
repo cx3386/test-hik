@@ -22,17 +22,26 @@ class CImageProcess : public QThread
 public:
   explicit CImageProcess(QObject* parent = nullptr);
   ~CImageProcess();
+  Mat dstImg[2];
 
   // should have the start control function packaged within the class
   // void transaction(const QString &portName, int waitTimeout, const QString
   // &request);
 
   void run() Q_DECL_OVERRIDE;
-
+signals:
+  void showCheckImage(int num);
+  
 private:
   bool quit;
   volatile int iImgCount;
   int iImgNoCycle;
+  bool isSameWheel;
+  double angleSum;
+  int angleCount;
+  double avgAngle;
+  void oneWheel();
+  double angleLowThreshold, angleHighThreshold;
   // QWaitCondition cond;
 };
 

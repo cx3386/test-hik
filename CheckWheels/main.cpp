@@ -3,13 +3,23 @@
 #include <QPointer>
 
 
+
+QPointer<MainWindow> logBrowser;
+void outputMessage(QtMsgType type, const QMessageLogContext &context, const QString &msg)
+{
+	if (logBrowser)
+		logBrowser->myMessageOutput(type, context, msg);
+}
+
 int main(int argc, char *argv[])
 {
+	QApplication::addLibraryPath("./plugins");
 	QApplication a(argc, argv);
 	
-	MainWindow w;
-	//qInstallMessageHandler(w.myMessageOutput);
-	w.show();
+	logBrowser = new MainWindow();
+	logBrowser->show();
+	qInstallMessageHandler(outputMessage);
+	
 	
 	return a.exec();
 }

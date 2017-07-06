@@ -16,7 +16,7 @@ int sendVideoFrame()
 	VideoCapture capture("C:\\Users\\cx3386\\Videos\\1.mp4");
 	//检测是否正常打开:成功打开时，isOpened返回ture????
 	if (!capture.isOpened())
-		cout << "fail??to??open!" << endl;
+		cout << "fail to 8open!" << endl;
 	//获取整个帧数????
 	long totalFrameNumber = capture.get(CV_CAP_PROP_FRAME_COUNT);
 	cout << "整个视频共" << totalFrameNumber << "帧" << endl;
@@ -24,13 +24,13 @@ int sendVideoFrame()
 	//qDebug() << "format:" << capture.get(CV_CAP_PROP_FORMAT) << endl;
 
 	//设置开始帧()????
-	long frameToStart = 100;
+	long frameToStart = 0;
 	capture.set(CV_CAP_PROP_POS_FRAMES, frameToStart);
 	cout << "从第" << frameToStart << "帧开始读" << endl;
 
 
 	//设置结束帧????
-	int frameToStop = 10000;
+	int frameToStop = totalFrameNumber - 1;
 
 	if (frameToStop < frameToStart)
 	{
@@ -58,7 +58,7 @@ int sendVideoFrame()
 	namedWindow("Extracted frame");
 	//两帧间的间隔时间:????
 	//int??delay??=??1000/rate;????
-	int delay = 1000 / rate;
+	int delay = 1000 / rate ;
 
 
 	//利用while循环读取帧????
@@ -69,7 +69,7 @@ int sendVideoFrame()
 	//滤波器的核????
 	//int kernel_size = 3;
 	//Mat kernel = Mat::ones(kernel_size, kernel_size, CV_32F) / (float)(kernel_size*kernel_size);
-	volatile int iImgHanding = 3;
+	volatile int iImgHanding = 25;
 	while (!stop)
 	{
 		//读取下一帧????
@@ -111,7 +111,7 @@ int sendVideoFrame()
 		pRawImage = frame;
 		imageNeedProcess.wakeOne();
 		mutex.unlock();
-		iImgHanding = 3;
+		iImgHanding = 7; //every 8 frame 
 	}
 	//关闭视频文件????
 	capture.release();
