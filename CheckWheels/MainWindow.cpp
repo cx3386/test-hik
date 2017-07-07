@@ -39,7 +39,8 @@ MainWindow::MainWindow(QWidget* parent)
   }
   Alarm(ALARM_LIGHT_GREEN);
  
-	  startWheelSensor();
+  //startWheelSensor();
+
   
 
  }
@@ -87,7 +88,7 @@ void MainWindow::on_action_Start_triggered()
 
   ui.action_Start->setEnabled(!isPlayFlag);
   ui.action_Stop->setEnabled(isPlayFlag);
-
+  hikvision.hikStartSave();
   //while (1) {
   //  QEventLoop eventloop;
   //  QTimer::singleShot(400, &eventloop, SLOT(quit())); // wait 0.4s
@@ -195,9 +196,33 @@ void MainWindow::startWheelSensor()	//0 is error, 1 is ok.
 				while (alarmSerial.waitForReadyRead(100))
 					responseData += alarmSerial.readAll();
 
-				if (responseData == "@00RR00000040*\r") { sensorA = false; sensorB = false; }	//00
-				else if (responseData == "@00RR00000242*\r") { sensorA = true; sensorB = false; }	//01
-				else if (responseData == "@00RR00000848*\r") { sensorA = false; sensorB = true; }	//10
+				if (responseData == "@00RR00000040*\r") 
+				{
+					sensorA = false; sensorB = false;
+				}	//00
+				else if (responseData == "@00RR00000242*\r") 
+				{
+					if (sensorA == true && sensorB == false)
+						continue;
+					else
+					{
+						sensorA = true; 
+						sensorB = false;
+						hikvision.hikStartSave();
+					}
+					
+				}	//01
+				else if (responseData == "@00RR00000848*\r")
+				{
+					if (sensorA == true && sensorB == false)
+						continue;
+					else
+					{
+						sensorA = false;
+						sensorB = true;
+						hikvision.hikStopSave();
+					}
+				}	//10
 				else if (responseData == "@00RR00000A31*\r") { qCritical() << "Error: the wheel sensor: A&B" << endl; }	//11
 				else qCritical() << "Error: the wheel sensor wrong response" << endl;
 

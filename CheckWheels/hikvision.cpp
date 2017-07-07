@@ -6,8 +6,10 @@
 #include "Windows.h"
 #include "HCNetSDK.h"
 #include "plaympeg4.h"
-
+#include <QTime>
 #include <time.h>
+#include <QTimer>
+#include <QEventLoop>
 
 
 
@@ -160,7 +162,7 @@ BOOL HikVision::hikRealPlay(HWND h)
 
 	lRealPlayHandle = NET_DVR_RealPlay_V40(lUserID, &struPlayInfo, fRealDataCallBack, NULL);
 
-	//NET_DVR_SaveRealData(lRealPlayHandle, sFileName);
+
 	if (lRealPlayHandle < 0) {
 		qDebug("NET_DVR_RealPlay_V40 error\n");
 		qDebug("%d\n", NET_DVR_GetLastError());
@@ -193,4 +195,24 @@ BOOL HikVision::hikStopRealPlay()
 	return (NET_DVR_Cleanup());
 }
 
+void HikVision::hikStartSave()
+{
+	QString saveDir("D:\\Capture\\");
+	QString currentTime = QDateTime::currentDateTime().toString("yyyyMMdd-hhmmss");//ddd is weekday
+	saveDir.append(currentTime).append(".mp4");
+	QByteArray ba = saveDir.toLatin1();
+	if (NET_DVR_SaveRealData(lRealPlayHandle, ba.data()))
+		//QEventLoop eventloop;
+		//QTimer::singleShot(30000, &eventloop, SLOT(quit())); //wait 30s  
+		//eventloop.exec();
+	{
+		Sleep(3000);
+		NET_DVR_StopSaveRealData(lRealPlayHandle);
+	}
+}
+
+void HikVision::hikStopSave()
+{
+	NET_DVR_StopSaveRealData(lRealPlayHandle);
+}
 
